@@ -5,9 +5,9 @@ import logging
 
 if __name__ == "__main__":
 
-    logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
+    logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')  # log informational confirmation
 
-    project_name = "TextSummarizer"
+    # project_name = "TextSummarizer"
 
     list_files = [
         ".github/workflows/.gitkeep",  # to prevent git from deleting the folder
@@ -28,6 +28,7 @@ if __name__ == "__main__":
         "Dockerfile",
         "requirements.txt",
         "setup.py",
+        "instructions.md",
         "notebook/trial.ipynb",
     ]
 
@@ -45,4 +46,4 @@ if __name__ == "__main__":
                 pass
                 logging.info(f"Creating empty file: {file_path}")
         else:
-            logging.info(f"{file_name} is already exists")
+            logging.info(f"{file_name} is already exists")  # log information will be printed to the console
