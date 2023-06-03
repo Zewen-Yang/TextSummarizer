@@ -7,20 +7,20 @@ if __name__ == "__main__":
 
     logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')  # log informational confirmation
 
-    # project_name = "TextSummarizer"
+    project_name = "TextSummarizer"
 
     list_files = [
         ".github/workflows/.gitkeep",  # to prevent git from deleting the folder
-        "src/__init__.py",
-        "src/components/__init__.py",
-        "src/utils/__init__.py",
-        "src/utils/common.py",
-        "src/logging/__init__.py",
-        "src/config/__init__.py",
-        "src/config/configuration.py",
-        "src/pipeline/__init__.py",
-        "src/entity/__init__.py",
-        "src/constants/__init__.py",
+        f"src/{project_name}/__init__.py",
+        f"src/{project_name}/conponents/__init__.py",
+        f"src/{project_name}/utils/__init__.py",
+        f"src/{project_name}/utils/common.py",
+        f"src/{project_name}/logging/__init__.py",
+        f"src/{project_name}/config/__init__.py",
+        f"src/{project_name}/config/configuration.py",
+        f"src/{project_name}/pipeline/__init__.py",
+        f"src/{project_name}/entity/__init__.py",
+        f"src/{project_name}/constants/__init__.py",
         "config/config.yaml",
         "params.yaml",
         "app.py",

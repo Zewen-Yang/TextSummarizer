@@ -4,6 +4,8 @@
 ## 1. construct the project files
 
 - copy template.py
+- rename project_name
+- run `python template.py` in the terminal
 
 ```shell
 python template.py
@@ -32,7 +34,7 @@ python --version
 
 Step 4:
 modif your requirements.txt
-> Note: if torch is needed, you need to install independently in the terminal. add torch to requirements.txt before deployment
+> Note: if `torch` is needed, you need to install independently in the terminal. Add `torch` to requirements.txt before deployment
 > 
 > Note:` -e .` it will tragger the setup.py file, delete it before deployment
 
