@@ -40,7 +40,10 @@ setup(
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{PROJECT_NAME}/issues",
     },
-    packages=find_packages(),  # looking for all __init__.py files
+    package_dir={"": "src"},
+    # where = src because the custom package is in src
+    # also avoid using the package as src.TextSummarizer
+    packages=find_packages(where="src"),  
     install_requires=get_requirements('requirements.txt'),
 )
 
