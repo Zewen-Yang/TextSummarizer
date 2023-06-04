@@ -22,6 +22,7 @@ if __name__ == "__main__":
         f"src/{project_name}/entity/__init__.py",
         f"src/{project_name}/constants/__init__.py",
         "config/config.yaml",
+        # "artifacts"
         "params.yaml",
         "app.py",
         "main.py",

@@ -61,7 +61,19 @@ pip install -r requirements.txt
 - copy `common.py` and `exception.py`
 
 
-## 7. Conduct the training experiment in Colab
+## 7. Conduct the Training Experiment in Colab
 
 - `TextSummarizer.ipynb`
+- train and download model
 
+## 8. Update Workforms
+- `notebook/01.data_ingestion.ipynb`
+  1. Update config.yaml
+  2. update `constants/__init__.py` for CONFIG_FILE_PATH and PARAMS_FILE_PATH
+  3. Update params.yaml with dummy parameters
+
+- Update the configuration manager in `TextSummarizer/config/configuration.py`
+
+1. Update the pipeline
+2. Update the main.py
+3.  Update the app.py

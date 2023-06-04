@@ -1,6 +1,8 @@
 import os
+import sys
 import yaml
-from textSummarizer.logging import logger
+from TextSummarizer.logging import logger
+from TextSummarizer.utils.exception import CustomException
 from box import ConfigBox
 from box.exceptions import BoxValueError
 from ensure import ensure_annotations
@@ -30,7 +32,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
     except BoxValueError:
         raise ValueError("yaml file is empty")
     except Exception as e:
-        raise e
+        raise CustomException(e, sys)
     
 
 
