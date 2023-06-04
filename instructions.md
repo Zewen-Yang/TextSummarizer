@@ -56,3 +56,12 @@ pip install -r requirements.txt
 ```
 
 
+## 6. Customize `utils/common.py, exception.py`
+
+- copy `common.py` and `exception.py`
+
+
+## 7. Conduct the training experiment in Colab
+
+- `TextSummarizer.ipynb`
+
